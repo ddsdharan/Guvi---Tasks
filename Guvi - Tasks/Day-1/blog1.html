@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        *{
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 60px;
+  height: 800px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
+.topichead{
+  font-family: "copper plate", fantasy;
+    font-size: 40px;
+    text-align: center;
+}
+.columnheading{
+        text-align: center;
+        margin-bottom: 0;
+        font-family: "Monaco", monospace;
+}
+.sideheadings{
+      text-align: left;
+      font-family: "Lucida Console", monospace;
+       margin-bottom: 0;
+}
+.p1{
+  text-align: left;
+  margin-top: 1;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+}
+.row{
+  text-align: justify;
+  text-justify: inter-word;
+}
+.ul{
+    list-style-position: inside;
+}
+
+        </style>
+        </head>
+<body>
+<h2 class = "topichead">Differences between HTTP/1.1 vs HTTP/2</h2>
+<div class="row">
+  <div class="column" style="background-color:#8a8989;">
+    <h2 class = "columnheading">HTTP/1.1</h2>
+    <ul class = "ul1">
+    <li><h4 class = "sideheadings">Key Features of HTTP/1.1</h4></li>
+        <p class = "p1">It supports connection reuse i.e. for every TCP connection there could be multiple requests and responses, 
+        and pipelining where the client can request several resources from the server at once. 
+        However, pipelining was hard to implement due to issues such as head-of-line blocking and was not a feasible solution.</p>
+        
+        <li><h4 class = "sideheadings">Status Code of HTTP/1.1</h4></li>
+        <p class = "p1">Introduces a warning header field to carry additional information about the status of a message. 
+            Can define 24 status codes, error reporting is quicker and more efficient.
+        </p>
+        <li><h4 class = "sideheadings">Authentication Mechanism of HTTP/1.1</h4></li>
+        <p class = "p1">It is relatively secure since it uses digest authentication, NTLM authentication.
+        </p>
+        <li><h4 class = "sideheadings">Caching of HTTP/1.1</h4></li>
+        <p class = "p1">Expands on the caching support by using additional headers like cache-control, conditional headers 
+            like If-Match and by using entity tags.        
+        </p>
+        <li><h4 class = "sideheadings">Web Traffic of HTTP/1.1</h4></li>
+        <p class = "p1">HTTP/1.1 provides faster delivery of web pages and reduces web traffic as compared to HTTP/1.0. 
+            However, TCP starts slowly and with domain sharding (resources can be downloaded simultaneously by using multiple domains), 
+            connection reuse and pipelining, there is an increased risk of network congestion.	
+        </p>
+    </ul>
+  </div>
+  <div class="column" style="background-color:#807d7d;">
+    <h2 class = "columnheading">HTTP/2</h2>
+    <ul class = = "ul1">
+        <li><h4 class = "sideheadings">Key Features of HTTP/2</h4></li>
+        <p class = "p1">Uses multiplexing, where over a single TCP connection resources to be delivered are interleaved and arrive at the client almost 
+            at the same time. It is done using streams which can be prioritized, can have dependencies and individual flow control. 
+            It also provides a feature called server push that allows the server to send data that the client will need but has not yet requested.
+        </p>
+        <li><h4 class = "sideheadings">Status Code of HTTP/2</h4></li>
+        <p class = "p1">Underlying semantics of HTTP such as headers, status codes remains the same.                    <</p>
+        <li><h4 class = "sideheadings">Authentication Mechanism of HTTP/2</h4></li>
+        <p class = "p1">Security concerns from previous versions will continue to be seen in HTTP/2. 
+            However, it is better equipped to deal with them due to new TLS features like connection error of type Inadequate_Security.         
+        
+            <li><h4 class = "sideheadings">Caching of HTTP/2</h4></li>
+        <p class = "p1">HTTP/2 does not change much in terms of caching. 
+            With the server push feature if the client finds the resources are already present in the cache, it can cancel the pushed stream.
+        </p>
+        <li><h4 class = "sideheadings">Web Traffic	of HTTP/2</h4></li>
+        <p class = "p1">HTTP/2 utilizes multiplexing and server push to effectively reduce the page load time
+            by a greater margin along with being less sensitive to network delays.            
+        </p>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
