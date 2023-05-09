@@ -1,0 +1,25 @@
+const outputContainer = document.getElementById('output');
+
+fetch('https://restcountries.com/v3.1/all')
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(country => {
+      const countryElement = document.createElement('div');
+      countryElement.innerHTML = `
+   <div class="card text-start text-bg-dark">
+  <img src="${country.flags.svg}" alt="Country Flags" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">${country.name.common}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Region:${country.region}</li>
+    <li class="list-group-item">Sub-region: ${country.subregion}</li>
+    <li class="list-group-item">Population: ${country.population}</li>
+  </ul>
+</div> `;
+      outputContainer.appendChild(countryElement);
+    })
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error)
+  })

@@ -1,0 +1,30 @@
+body {
+    background-color: slategray;
+    border: border-box;
+}
+
+.card {
+    width:30rem;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+   margin-top: 2%;
+   display: grid;
+   grid-template-columns: 2fr 2fr;
+   grid-gap: 2rem;
+
+}
+
+.list-group-item {
+    background-color:lightgray;
+    margin:1%;
+}
+.d-inline-block {
+    border-radius: 50%;
+    width: 35px;
+    height:35px;
+    object-fit: cover;
+}
