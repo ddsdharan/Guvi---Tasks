@@ -1,0 +1,56 @@
+body {
+    background-color: slategray!important;
+}
+
+.card {
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.nav {
+    background-color: black;
+    border: none;
+}
+
+.nav-item {
+    background-color: slategray;
+    text-decoration: solid;
+    color: black;
+}
+
+.container-md {
+    padding-top: 40px;
+    background-color: slategray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid {
+    background-color: slategray;
+}
+
+.container-lg {
+    padding-top:40px;
+}
+
+.table {
+    border:10px black;
+    color:black!important;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.heading {
+    padding-top: 20px;    
+}
+
+.card-img-top {
+    width: 320px;
+    height:200px;
+    padding: 20px;
+}
