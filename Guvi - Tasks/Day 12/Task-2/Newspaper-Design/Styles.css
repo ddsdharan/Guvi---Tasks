@@ -1,0 +1,215 @@
+body{
+    margin: 30px 200px;    
+ }
+ .container{
+     display: grid;
+     grid-template-columns: 200px 1fr 100px;
+     grid-template-rows: 60px 30px auto auto 1fr;
+     grid-gap:10px;
+ }
+ .header{
+     grid-column: 2 / 3;
+     grid-row: 1 / 2;   
+ }
+ .header h1{
+     display: grid;
+     align-items: center;
+     justify-items: center;
+     font-family:'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+     margin: 0px;
+     font-size: 50px;   
+ }
+ hr{
+     margin-left: 30%;
+     margin-right: 30%;
+     height: 2px;
+     width: 40%;
+     background-color: black;    
+ }
+ .subheading{
+     grid-column: 1 / -1;
+     grid-row: 2 / 3;
+     text-align: left;
+     border-bottom: 1px solid black;
+     border-top: 1px solid black;
+     padding-left: 20px; 
+ }
+ .subheading p{
+     margin: 0px;    
+ }
+
+ .first--column{
+     grid-column: 1 / 2;
+     grid-row: 3 / -1;
+     text-align: center;
+     padding-right: 10px;
+     border-right: 1px solid black;
+ }
+ .first--column h2, h3, h4, h5{
+     margin: 0px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ .first--column__text h4,h6{
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+    text-align: left;
+
+ }
+ .first--column hr{
+     margin-left: 30%;
+     margin-right: 30%;
+     height: 2px;
+     width: 40%;
+     background-color: black;    
+ }
+ .first--column p{
+     margin: 0px;
+     text-align: justify;
+ }
+ .principal--header h2 {
+    text-align: center;
+ }
+
+ .principal--subheader {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+ }
+.principal--subheader h4 {
+    border-left:15px solid black;
+        
+}
+ .Principal--News{
+    grid-column: 2 / 3;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+ }
+ .Principal--News img{
+     width: 100%;
+ }
+ .Principal--News p{
+     margin: 0px;
+     text-align: justify;
+ }
+ 
+ .second--news{
+     grid-column: 2 / 3;
+     grid-row: 4 / 5;
+     border-bottom: 1px solid black;
+ }
+
+ .second--news__container h2{
+     margin: 0px;
+     display: grid;
+     grid-column: 1 / 5;
+     grid-row: 1 / 2;
+     font-style: italic;
+ }
+ .second--news__container td{
+     width: 25%;
+     text-align: justify;
+     padding: 5px;
+ }
+ .second--news__container h5{
+     text-align: center;
+     margin: 0px;
+     padding-bottom: 25px;
+ }
+ .second--news__container hr{
+     padding: 0px;
+     margin-left: 25%;
+     margin-right: 25%;
+     height: 2px;
+     width: 50%;
+ }
+
+ .third--news{
+     grid-column: 2 / 3;
+     grid-row: 5 / 6;
+ }
+ .third--news h2{
+     margin: 0px;
+     font-style: italic;
+     grid-column: 1 / 3;
+     grid-row: 1;
+ }
+ .third--news__container{
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 1fr;
+     grid-gap: 10px;
+     padding: 10px;
+     border-bottom: 2px solid black;
+ }
+ .third--news__container img{
+     grid-column: 2 / 3;
+     grid-row: 2;
+     grid-gap:10px;
+     width: 100%;
+ }
+
+ .thrid--news__text2 h4 {
+    text-align: center;
+ }
+
+.thrid--news__text2 p {
+    text-align: justify;
+}
+
+.thrid--news__text2 img {
+    object-fit: cover;
+    justify-content: center;
+}
+
+ .third--news__text{
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+     grid-gap:10px;
+     width: 100%;
+     text-align: justify;
+ }
+
+ .third--news__text p{
+     margin: 0px;   
+ }
+ .third--news__text h4{
+     text-align: center;
+     padding-bottom: 2px;   
+ }
+ .third--news__text hr{
+     margin: 0% 15% 0% 15%;
+     height: 2px;
+     width: 70%;
+     background-color: black;    
+ }
+ .highlight{
+     float: left;
+     padding: 15px;
+     shape-outside: inset(20px 20px 20px 20px);
+     shape-margin: 100px;   
+ }
+
+ .margin--right{
+     grid-column: 3 / 4;
+     grid-row: 3 / -1;
+     border-left: 1px solid black;
+     text-align: justify;
+     padding-left: 10px;
+     /* letter-spacing: 0.5px; */
+  }
+
+  .margin--right h4 {
+    /* text-align: center; */
+    justify-self:flex-end;
+  }
+
+  .margin--right p {
+    word-spacing: 0.5px;
+    border-bottom:1px solid black;
+    padding: 5px;
+
+  }

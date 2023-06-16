@@ -1,0 +1,53 @@
+html, body {
+    background-color:grey !important;
+    margin: 0;
+    border: 0;
+    width: 100%;
+}
+
+.container {
+    background-color: #010d01;
+    display:block;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    padding: 2.5rem;
+    margin: 1rem;
+    overflow-x: auto;
+}
+
+.container table {
+    width: 100%;
+    /* table-layout: fixed; */
+  }
+
+.container th, .container td {
+    text-align: center;
+    padding: 10px;
+}
+
+.form-range {
+    display: block;
+    margin: 0 auto;
+}
+
+h4, th, .form-label {
+    color: white !important;
+}   
+
+th {
+    justify-content: space-between;
+}
+
+thead {
+    text-align: center;
+}
+
+.form-check-input {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-top:20px;
+    margin-bottom:0 auto;
+}
